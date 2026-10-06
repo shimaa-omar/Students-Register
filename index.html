@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container-title">
+            <h1><i class="fa-solid fa-graduation-cap"></i>Student Registration</h1>
+            <p>Add new student and view thier information</p>
+        </div>
+        <div class="counter">
+            <div>
+                <i class="fa-solid fa-person icon"></i>
+                <div>
+                    <p>Total Student</p>
+                    <h2 id="total-count">5<i class="fa-solid fa-people-group"></i></h2>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-child-dress icon"></i>
+                <div>
+                    <p>Female Student</p>
+                    <h2 id="female-count">2<i class="fa-solid fa-people-group"></i></h2>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-person icon"></i>
+                <div>
+                    <p>Male Student</p>
+                    <h2 id="male-count">3<i class="fa-solid fa-people-group"></i></h2>
+                </div>
+            </div>
+        </div>
+        <div class="regist">
+            <div id="div1">
+                <div class="regist-form-title">
+                    <h2><i class="fa-solid fa-user-plus"></i>Add New Student</h2>
+                    <p>Fill in the details below to register a new Student</p>
+                </div>
+                <form id="regist-form">
+                    <div>
+                        <label for="name">Full Name <span>*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label for="age">Age <span>*</span></label>
+                        <input type="number" id="age" name="age" required placeholder="Enter your age">
+                    </div>
+                    <div>
+                        <label for="Course-name">Course Name <span>*</span></label>
+                        <select id="Course-name">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JS">JS</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="grade">Grade <span>*</span></label>
+                        <input type="number" id="grade" name="grade" required placeholder="Enter your grade" min="0" max="100">
+                    </div>
+                    <div>
+                        <input type="submit" value="+ Add Student">
+                    </div>
+                </form>
+            </div>
+            <div id="div2">
+                <div id="empty">
+                    <h2>There are no students.</h2>
+                </div>
+                <!-- <div>
+                    <h2 class="name">Ahmed</h2>
+                    <p><i class="fa-solid fa-calendar-days"></i>Age: <span class="age">20</span></p>
+                    <p class="course-name"><i class="fa-solid fa-code"></i>HTML</p>
+                    <p><i class="fa-solid fa-star"></i>Grade: <span class="grade">100</span></p>
+                    <p>Status: <span class="status">Passed</span></p>
+                </div>
+                <div>
+                    <h2 class="name">Ahmed</h2>
+                    <p><i class="fa-solid fa-calendar-days"></i>Age: <span class="age">20</span></p>
+                    <p class="course-name"><i class="fa-solid fa-code"></i>HTML</p>
+                    <p><i class="fa-solid fa-star"></i>Grade: <span class="grade">100</span></p>
+                    <p>Status: <span class="status">Passed</span></p>
+                </div>
+                <div>
+                    <h2 class="name">Ahmed</h2>
+                    <p><i class="fa-solid fa-calendar-days"></i>Age: <span class="age">20</span></p>
+                    <p class="course-name"><i class="fa-solid fa-code"></i>HTML</p>
+                    <p><i class="fa-solid fa-star"></i>Grade: <span class="grade">100</span></p>
+                    <p>Status: <span class="status">Passed</span></p>
+                </div>
+                <div>
+                    <h2 class="name">Ahmed</h2>
+                    <p><i class="fa-solid fa-calendar-days"></i>Age: <span class="age">20</span></p>
+                    <p class="course-name"><i class="fa-solid fa-code"></i>HTML</p>
+                    <p>Grade: <span class="grade">100</span></p>
+                    <p>Status: <span class="status">Passed</span></p>
+                </div>
+                <div>
+                    <h2 class="name">Ahmed</h2>
+                    <p><i class="fa-solid fa-calendar-days"></i>Age: <span class="age">20</span></p>
+                    <p class="course-name"><i class="fa-solid fa-code"></i>HTML</p>
+                    <p>Grade: <span class="grade">100</span></p>
+                    <p>Status: <span class="status">Passed</span></p>
+                </div>
+                <div>
+                    <h2 class="name">Ahmed</h2>
+                    <p>Age: <span class="age">20</span></p>
+                    <p class="course-name"><i class="fa-solid fa-code"></i>HTML</p>
+                    <p>Grade: <span class="grade">100</span></p>
+                    <p>Status: <span class="status">Passed</span></p>
+                </div>
+                <div>
+                    <h2 class="name">Ahmed</h2>
+                    <p>Age: <span class="age">20</span></p>
+                    <p class="course-name"><i class="fa-solid fa-code"></i>HTML</p>
+                    <p>Grade: <span class="grade">100</span></p>
+                    <p>Status: <span class="status">Passed</span></p>
+                </div>  -->
+            </div> 
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

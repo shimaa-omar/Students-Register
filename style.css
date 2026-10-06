@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(./Pastel\ Study\ Corner\ Background.png);
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    margin: 40px 105px;
+}
+.container .container-title{
+    text-align: center;
+}
+.container .container-title h1{
+    color: #24456F;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.container .container-title p{
+    color: #4F6F95;
+    font-size: 20px;
+}
+/* ////////////////////counter/////////////////////////// */
+.container .counter{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+
+}
+.container .counter> div{
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 10px;
+    line-height: 30px;
+    box-shadow: 0px 0px 5px 5px #7185A0;
+    display: flex;
+    column-gap: 20px;
+    position: relative;
+}
+.container .counter> div .fa-person{
+    color: #4A90E2;
+}
+.container .counter> div .fa-child-dress{
+    color: #e24ab9;
+}
+.container .counter> div .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    margin-right: 20px;
+}
+.container .counter div div p{
+    color: #4F6F95;
+}
+.container .counter div div h2{
+    color: #24456F;
+    font-size: 27px;
+    font-weight: 700;
+}
+.container .counter div div h2 .fa-people-group{
+    margin-left: 10px;
+    font-size: 18px;
+    color: #7185A0;
+}
+/* //////////////////regist/////////////////////// */
+.regist{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: "form form result result result result";
+    column-gap: 40px;
+}
+.regist #div1 ,.regist #div2{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 5px #7185A0;
+}
+.regist #div1{
+    grid-area: form;
+    max-height: 500px;
+}
+.regist #div1 .regist-form-title{
+    background-color: #7ba6d853;;
+    padding: 10px;
+    border-radius:10px;
+    margin-bottom: 20px;
+}
+.regist #div1 .regist-form-title h2{
+    color: #24456F
+}
+.regist #div1 .regist-form-title h2 .fa-user-plus{
+    margin-right: 10px;
+    color: #4A90E2;
+    padding: 10px;
+    border-radius: 50%;
+}
+.regist #div1 .regist-form-title p{
+    color: #4F6F95;
+}
+.regist #div1 form div{
+    margin-bottom: 20px;
+    line-height: 13px;
+}
+.regist #div1 form label{
+    display: block;
+    color: #24456F;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+::placeholder{
+    color: #9AAAC0;
+}
+.regist #div1 form input, .regist #div1 form select{
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #7185A0;
+    border-radius: 10px;
+}
+.regist #div1 form label span{
+    color: red;
+}
+.regist #div1 form input[type=submit]{
+    background-color: #4A90E2;
+    margin-top: 10px;
+    padding:10px 0;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.regist #div2{
+    grid-area: result;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.regist #div2> div{
+    width: 30%;
+    height: 180px;
+    box-shadow: 0px 0px 10px 0px #7185A0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+.regist #div2> div .name{
+    color: #24456F;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.regist #div2> div p{
+    color: #4F6F95;
+    margin-bottom: 10px;
+}
+.regist #div2 >div p .fa-calendar-days , .fa-code, .fa-star{
+    margin-right: 20px;
+    color: #7185A0;
+}
+.regist #div2 #empty{
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    box-shadow: none;
+    color: #7185A0;
+}
